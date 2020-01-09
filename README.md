@@ -7,6 +7,7 @@ code for paper
 2. PyTorch (ver>=0.4)
 3. Numpy
 4. mini-ImageNet dataset
+5. zipfile
 
 #### 1.2. Testing Environment
 ##### 1.2.1 Software:
@@ -48,7 +49,17 @@ MSML
 | 5-way 1-shot | 1800MB | 8767MB |
 | 5-way 5-shot | 1800MB | 10157MB |
 
-#### 3.2. Speed
+#### 3.2 Processes
+##### 3.2.1 prepare dataset
+1. download [mini-ImageNet](https://drive.google.com/file/d/1-E1D3aTO0_JmHudiaiaEGzZ-dArZssJp/view) dataset, images are croped to 84* 84 pixels.
+2. put `mini-ImageNet.zip` in folder `MSML/data/`.
+3. run `proc_dataset.py` to unzip file and copy all images to folder `MSML/data/miniimagenet/images/`.
+##### 3.2.2 Pretrain
+1. run `MSML/pretrain/pretrain.py` to get pretrain weight.
+##### 3.3.3 Meta-Train & Meta-Test
+1. finish pretrain phase
+2. run `MSML/meta/main.py`
+#### 3.3. Speed
 |  | iter/s | total time |
 | --- | --- | --- |
 | Pretrain | 2.64 | 1h-23m-45s |
