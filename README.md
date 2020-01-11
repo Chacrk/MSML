@@ -62,6 +62,6 @@ MSML
 #### 3.3. Speed
 |  | iter/s | total time |
 | --- | --- | --- |
-| Pretrain | 2.64 | 1h-23m-45s |
+| Pretrain | 2.64 | 5h-10m-46s |
 | 5-way 1-shot | 0.7 | 1h-23m-45s |
 | 5-way 5-shot | 0.3 | 1h-23m-45s |
